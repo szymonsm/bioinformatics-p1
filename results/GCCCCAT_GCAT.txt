@@ -1,0 +1,25 @@
+Global alignment no. 1:
+G---CAT
+GGGGCAT
+Traceback: ['up_left', 'up_left', 'up_left', 'left', 'left', 'left', 'up_left']
+Score: 14.0
+
+Global alignment no. 2:
+G--C-AT
+GGGCCAT
+Traceback: ['up_left', 'up_left', 'left', 'up_left', 'left', 'left', 'up_left']
+Score: 14.0
+
+Global alignment no. 3:
+G-C--AT
+GGCCCAT
+Traceback: ['up_left', 'up_left', 'left', 'left', 'up_left', 'left', 'up_left']
+Score: 14.0
+
+Local alignment no. 1:
+CAT
+CAT
+Starting indices: 7, 4
+Traceback: ['up_left', 'up_left', 'up_left']
+Score: 15.0
+

@@ -1,0 +1,13 @@
+Global alignment no. 1:
+GT-A-GTTT-
+ACCAAGT-TT
+Traceback: ['left', 'up_left', 'up', 'up_left', 'up_left', 'left', 'up_left', 'left', 'up_left', 'up_left']
+Score: 7.0
+
+Local alignment no. 1:
+ACCGTTT
+AC-GT-T
+Starting indices: 8, 7
+Traceback: ['up_left', 'up', 'up_left', 'up_left', 'up', 'up_left', 'up_left']
+Score: 21.0
+

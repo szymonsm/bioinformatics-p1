@@ -1,0 +1,19 @@
+Global alignment no. 1:
+CCAAGGGC
+--A-G--C
+Traceback: ['up_left', 'up', 'up', 'up_left', 'up', 'up_left', 'up', 'up']
+Score: -3.0
+
+Global alignment no. 2:
+CCAAGGCC
+--A-G-C-
+Traceback: ['up', 'up_left', 'up', 'up_left', 'up', 'up_left', 'up', 'up']
+Score: -3.0
+
+Local alignment no. 1:
+AAGGC
+A-G-C
+Starting indices: 3, 7
+Traceback: ['up_left', 'up', 'up_left', 'up', 'up_left']
+Score: 11.0
+

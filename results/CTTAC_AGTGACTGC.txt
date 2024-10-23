@@ -1,0 +1,25 @@
+Global alignment no. 1:
+CCTTAAAAC
+A-TGA---C
+Traceback: ['up_left', 'up', 'up', 'up', 'up_left', 'up_left', 'up_left', 'up', 'up_left']
+Score: 2.0
+
+Global alignment no. 2:
+CTTTAAAAC
+AGT-A---C
+Traceback: ['up_left', 'up', 'up', 'up', 'up_left', 'up', 'up_left', 'up_left', 'up_left']
+Score: 2.0
+
+Global alignment no. 3:
+CCTTACCCC
+A-TGAC---
+Traceback: ['up', 'up', 'up', 'up_left', 'up_left', 'up_left', 'up_left', 'up', 'up_left']
+Score: 2.0
+
+Local alignment no. 1:
+TTAC
+TGAC
+Starting indices: 5, 6
+Traceback: ['up_left', 'up_left', 'up_left', 'up_left']
+Score: 14.0
+

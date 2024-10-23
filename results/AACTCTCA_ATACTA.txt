@@ -1,0 +1,25 @@
+Global alignment no. 1:
+AAA--CT-A
+A-AAACTTA
+Traceback: ['up_left', 'left', 'up_left', 'up_left', 'left', 'left', 'up_left', 'up', 'up_left']
+Score: 17.0
+
+Global alignment no. 2:
+A--TTCT-A
+AAAT-CTTA
+Traceback: ['up_left', 'left', 'up_left', 'up_left', 'up', 'up_left', 'left', 'left', 'up_left']
+Score: 17.0
+
+Global alignment no. 3:
+AAAC--T-A
+A-ACCCTTA
+Traceback: ['up_left', 'left', 'up_left', 'left', 'left', 'up_left', 'up_left', 'up', 'up_left']
+Score: 17.0
+
+Local alignment no. 1:
+A-TTCT-A
+AAT-CTTA
+Starting indices: 8, 6
+Traceback: ['up_left', 'left', 'up_left', 'up_left', 'up', 'up_left', 'left', 'up_left']
+Score: 19.0
+
