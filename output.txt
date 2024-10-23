@@ -1,0 +1,100 @@
+Global alignment no. 1:
+TGCA
+T-GA
+Score: 13.0
+
+Global alignment no. 1:
+AGTTTGC-A
+A-TGCCTGA
+Score: 19.0
+
+Global alignment no. 1:
+AGTTTGCA--------
+--------ATGCCTGA
+Score: 19.0
+
+Global alignment no. 1:
+AGTTTGCA--------
+--------ATGCCTGA
+Score: 19.0
+
+Global alignment no. 1:
+--------AAAAAAAA
+AAAAAAAA--------
+Score: 19.0
+
+Global alignment no. 1:
+--------AAAAAAAA
+AAAAAAAA--------
+Score: 19.0
+
+Global alignment no. 1:
+-------AAAAAAA
+AAAAAAA-------
+Score: 19.0
+
+Global alignment no. 1:
+--------AAAAAAAA
+AAAAAAAA--------
+Score: 19.0
+
+Global alignment no. 1:
+--------AAAAAAAA
+AAAAAAAA--------
+Score: 19.0
+
+Global alignment no. 1:
+--------AAAAAAAA
+AAAAAAAA--------
+Score: 19.0
+
+Global alignment no. 1:
+--------AAAAAAAA
+AAAAAAAA--------
+Score: 19.0
+
+Global alignment no. 1:
+--------AAAAAAAA
+AAAAAAAA--------
+Score: 19.0
+
+Global alignment no. 1:
+A-GTTTGGA
+AAGTCCG-A
+Score: 19.0
+
+Global alignment no. 1:
+TATA-
+-ATAA
+Score: 7.0
+
+Global alignment no. 2:
+-TATT
+ATAT-
+Score: 7.0
+
+Global alignment no. 1:
+TATA-
+-ATAA
+Score: 11.0
+
+Global alignment no. 2:
+-TATT
+ATAT-
+Score: 11.0
+
+Global alignment no. 1:
+TATA-
+-ATAA
+Global alignment no. 1:
+TATA-
+-ATAA
+Traceback: ['left', 'up_left', 'up_left', 'up_left', 'up']
+Score: 7.0
+
+Global alignment no. 2:
+-TATT
+ATAT-
+Traceback: ['up', 'up_left', 'up_left', 'up_left', 'left']
+Score: 7.0
+
