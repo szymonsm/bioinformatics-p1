@@ -1,8 +1,9 @@
 Global alignment no. 1:
+T-CAAA
 TTC---
-T-CCCC
-Traceback: ['left', 'left', 'left', 'up_left', 'up', 'up_left']
+Traceback: ['up', 'up', 'up', 'up_left', 'left', 'up_left']
 Score: 2.0
+2024-10-24 18:30:40
 
 Local alignment no. 1:
 TC
@@ -10,4 +11,5 @@ TC
 Starting indices: 2, 3
 Traceback: ['up_left', 'up_left']
 Score: 10.0
+2024-10-24 18:30:40
 

@@ -1,20 +1,23 @@
 Global alignment no. 1:
+GCCCCAT
 G---CAT
-GGGGCAT
-Traceback: ['up_left', 'up_left', 'up_left', 'left', 'left', 'left', 'up_left']
+Traceback: ['up_left', 'up_left', 'up_left', 'up', 'up', 'up', 'up_left']
 Score: 14.0
+2024-10-24 18:30:40
 
 Global alignment no. 2:
+GCCCCAT
 G--C-AT
-GGGCCAT
-Traceback: ['up_left', 'up_left', 'left', 'up_left', 'left', 'left', 'up_left']
+Traceback: ['up_left', 'up_left', 'up', 'up_left', 'up', 'up', 'up_left']
 Score: 14.0
+2024-10-24 18:30:40
 
 Global alignment no. 3:
+GCCCCAT
 G-C--AT
-GGCCCAT
-Traceback: ['up_left', 'up_left', 'left', 'left', 'up_left', 'left', 'up_left']
+Traceback: ['up_left', 'up_left', 'up', 'up', 'up_left', 'up', 'up_left']
 Score: 14.0
+2024-10-24 18:30:40
 
 Local alignment no. 1:
 CAT
@@ -22,4 +25,5 @@ CAT
 Starting indices: 7, 4
 Traceback: ['up_left', 'up_left', 'up_left']
 Score: 15.0
+2024-10-24 18:30:40
 

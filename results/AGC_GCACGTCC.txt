@@ -1,19 +1,22 @@
 Global alignment no. 1:
-CCAAGGGC
 --A-G--C
-Traceback: ['up_left', 'up', 'up', 'up_left', 'up', 'up_left', 'up', 'up']
+GCACGTCC
+Traceback: ['up_left', 'left', 'left', 'up_left', 'left', 'up_left', 'left', 'left']
 Score: -3.0
+2024-10-24 18:30:40
 
 Global alignment no. 2:
-CCAAGGCC
 --A-G-C-
-Traceback: ['up', 'up_left', 'up', 'up_left', 'up', 'up_left', 'up', 'up']
+GCACGTCC
+Traceback: ['left', 'up_left', 'left', 'up_left', 'left', 'up_left', 'left', 'left']
 Score: -3.0
+2024-10-24 18:30:40
 
 Local alignment no. 1:
-AAGGC
 A-G-C
+ACGTC
 Starting indices: 3, 7
-Traceback: ['up_left', 'up', 'up_left', 'up', 'up_left']
+Traceback: ['up_left', 'left', 'up_left', 'left', 'up_left']
 Score: 11.0
+2024-10-24 18:30:40
 

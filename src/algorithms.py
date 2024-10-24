@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+import time
 
 class NeedlemanWunsch:
     '''
@@ -88,9 +89,9 @@ class NeedlemanWunsch:
         if x > 0 and y > 0:
             potential_moves.append('up_left')
         if x > 0:
-            potential_moves.append('left')
-        if y > 0:
             potential_moves.append('up')
+        if y > 0:
+            potential_moves.append('left')
 
         scores = {}
 
@@ -100,9 +101,9 @@ class NeedlemanWunsch:
                 gen2 = self.sequence2[y - 1]
                 scores['up_left'] = self.matrix.iloc[x - 1, y - 1] + self.substitution_matrix.loc[gen1, gen2]
             if potential_move == 'left':
-                scores['left'] = self.matrix.iloc[x - 1, y] + self.gap_penalty
+                scores['left'] = self.matrix.iloc[x, y - 1] + self.gap_penalty
             if potential_move == 'up':
-                scores['up'] = self.matrix.iloc[x, y - 1] + self.gap_penalty
+                scores['up'] = self.matrix.iloc[x - 1, y] + self.gap_penalty
         
         max_score = max(scores.values())
 
@@ -112,9 +113,9 @@ class NeedlemanWunsch:
                 if move == 'up_left':
                     self._find_traceback_steps(x - 1, y - 1, path, paths)
                 elif move == 'left':
-                    self._find_traceback_steps(x - 1, y, path, paths)
-                elif move == 'up':
                     self._find_traceback_steps(x, y - 1, path, paths)
+                elif move == 'up':
+                    self._find_traceback_steps(x - 1, y, path, paths)
                 path.pop()
 
     def _get_all_tracebacks(self):
@@ -143,11 +144,11 @@ class NeedlemanWunsch:
                 elif move == 'left':
                     aligned_seq1 = '-' + aligned_seq1
                     aligned_seq2 = self.sequence2[y - 1] + aligned_seq2
-                    x -= 1
+                    y -= 1
                 elif move == 'up':
                     aligned_seq1 = self.sequence1[x - 1] + aligned_seq1
                     aligned_seq2 = '-' + aligned_seq2
-                    y -= 1
+                    x -= 1
 
             print(f'Global alignment no. {i + 1}:')
             print(aligned_seq1)
@@ -162,10 +163,9 @@ class NeedlemanWunsch:
                     f.write(aligned_seq2 + '\n')
                     if save_tracebacks:
                         f.write(f"Traceback: {path}\n")
-                    f.write(f"Score: {self.matrix.iloc[len(self.sequence1), len(self.sequence2)]}\n\n")
+                    f.write(f"Score: {self.matrix.iloc[len(self.sequence1), len(self.sequence2)]}\n")
+                    f.write(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + '\n\n')
 
-
-# Smith-Waterman algorithm for local sequence alignment (take from upper class)
 class SmithWaterman(NeedlemanWunsch):
     '''
     Smith-Waterman algorithm for local sequence alignment.
@@ -262,11 +262,11 @@ class SmithWaterman(NeedlemanWunsch):
                     elif move == 'left':
                         aligned_seq1 = '-' + aligned_seq1
                         aligned_seq2 = self.sequence2[y - 1] + aligned_seq2
-                        x -= 1
+                        y -= 1
                     elif move == 'up':
                         aligned_seq1 = self.sequence1[x - 1] + aligned_seq1
                         aligned_seq2 = '-' + aligned_seq2
-                        y -= 1
+                        x -= 1
 
                 print(f'Local alignment no. {i + 1}:')
                 print(aligned_seq1)
@@ -282,4 +282,5 @@ class SmithWaterman(NeedlemanWunsch):
                         if save_tracebacks:
                             f.write(f"Starting indices: {x_start}, {y_start}\n")
                             f.write(f"Traceback: {path}\n")
-                        f.write(f"Score: {self.matrix.iloc[x_start, y_start]}\n\n")
+                        f.write(f"Score: {self.matrix.iloc[x_start, y_start]}\n")
+                        f.write(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + '\n\n')

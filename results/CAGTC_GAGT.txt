@@ -1,8 +1,9 @@
 Global alignment no. 1:
-CAGT-
-GAGTT
-Traceback: ['left', 'up_left', 'up_left', 'up_left', 'up_left']
+CAGTC
+GAGT-
+Traceback: ['up', 'up_left', 'up_left', 'up_left', 'up_left']
 Score: 9.0
+2024-10-24 18:30:40
 
 Local alignment no. 1:
 AGT
@@ -10,4 +11,5 @@ AGT
 Starting indices: 4, 4
 Traceback: ['up_left', 'up_left', 'up_left']
 Score: 15.0
+2024-10-24 18:30:40
 

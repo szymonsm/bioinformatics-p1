@@ -1,20 +1,23 @@
 Global alignment no. 1:
-TTTTT-AC
-A--TTTAT
-Traceback: ['up_left', 'up_left', 'left', 'up_left', 'up_left', 'up', 'up', 'up_left']
+T--TTGAC
+ACATT-AT
+Traceback: ['up_left', 'up_left', 'up', 'up_left', 'up_left', 'left', 'left', 'up_left']
 Score: 7.0
+2024-10-24 18:30:40
 
 Local alignment no. 1:
-TTTT
 TT-T
+TTAT
 Starting indices: 3, 7
-Traceback: ['up_left', 'up', 'up_left', 'up_left']
-Score: 13.0
-
-Local alignment no. 2:
-TT-A
-TTTA
-Starting indices: 5, 6
 Traceback: ['up_left', 'left', 'up_left', 'up_left']
 Score: 13.0
+2024-10-24 18:30:40
+
+Local alignment no. 2:
+TTGA
+TT-A
+Starting indices: 5, 6
+Traceback: ['up_left', 'up', 'up_left', 'up_left']
+Score: 13.0
+2024-10-24 18:30:40
 
